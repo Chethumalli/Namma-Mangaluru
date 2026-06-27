@@ -1,7 +1,20 @@
-export default function Page() {
+import Navbar from "@/components/layout/Navbar";
+import PlacesHero from "@/components/places/PlacesHero";
+import SearchBar from "@/components/places/SearchBar";
+import PlacesGrid from "@/components/places/PlacesGrid";
+
+export default function PlacesPage() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className="text-5xl font-bold">Coming Soon</h1>
+    <main className="bg-slate-950 min-h-screen">
+
+      <Navbar />
+
+      <PlacesHero />
+
+      <SearchBar />
+
+      <PlacesGrid />
+
     </main>
   );
 }
