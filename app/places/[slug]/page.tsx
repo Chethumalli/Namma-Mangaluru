@@ -107,23 +107,210 @@ export default async function PlacePage({ params }: Props) {
 
             <div className="mt-10 grid gap-6 md:grid-cols-2">
 
-                <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">                🌅 Beautiful Sunrise & Sunset
-              </div>
+  <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+    🌅 Beautiful Sunrise & Sunset
+  </div>
 
-                <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">                📸 Photography Spot
-              </div>
+  <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+    📸 Photography Spot
+  </div>
 
-              <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
-                🚗 Easy Accessibility
-              </div>
+  <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+    🚗 Easy Accessibility
+  </div>
 
-              <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
-                🍴 Nearby Restaurants
-              </div>
+  <div className="rounded-[32px] border border-white/10 bg-slate-900/95 p-12 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+    🍴 Nearby Restaurants
+  </div>
 
-            </div>
+</div>
 
-          </div>
+{/* ================= Gallery ================= */}
+
+<div className="mt-24">
+
+  <h2 className="text-4xl font-black">
+    Photo Gallery
+  </h2>
+
+  <p className="mt-4 max-w-2xl text-lg text-slate-400">
+    Explore the beauty of {title} through stunning photographs.
+  </p>
+
+  <div className="mt-10 grid gap-4 md:grid-cols-4 md:grid-rows-2">
+
+    <div className="relative h-[500px] overflow-hidden rounded-3xl md:col-span-2 md:row-span-2">
+      <Image
+        src="/images/panambur.jpg"
+        alt={title}
+        fill
+        className="object-cover transition duration-700 hover:scale-110"
+      />
+    </div>
+
+    <div className="relative h-60 overflow-hidden rounded-3xl">
+      <Image
+        src="/images/tannirbhavi.jpg"
+        alt="Tannirbhavi Beach"
+        fill
+        className="object-cover transition duration-700 hover:scale-110"
+      />
+    </div>
+
+    <div className="relative h-60 overflow-hidden rounded-3xl">
+      <Image
+        src="/images/someshwara.jpg"
+        alt="Someshwara Beach"
+        fill
+        className="object-cover transition duration-700 hover:scale-110"
+      />
+    </div>
+
+    <div className="relative h-60 overflow-hidden rounded-3xl">
+      <Image
+        src="/images/pilikula.jpg"
+        alt="Pilikula"
+        fill
+        className="object-cover transition duration-700 hover:scale-110"
+      />
+    </div>
+
+    <div className="relative h-60 overflow-hidden rounded-3xl">
+      <Image
+        src="/images/kudroli.jpg"
+        alt="Kudroli Temple"
+        fill
+        className="object-cover transition duration-700 hover:scale-110"
+      />
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+{/* ================= LOCATION ================= */}
+
+<div className="mt-24">
+
+  <h2 className="text-4xl font-black">
+    Location
+  </h2>
+
+  <p className="mt-4 text-slate-400">
+    Easily locate {title} and plan your visit.
+  </p>
+
+  <div className="mt-10 overflow-hidden rounded-3xl border border-white/10">
+
+    <iframe
+      src="https://www.google.com/maps?q=Panambur+Beach+Mangalore&output=embed"
+      width="100%"
+      height="450"
+      loading="lazy"
+      className="border-0"
+    />
+
+  </div>
+
+</div>
+{/* ================= THINGS TO DO ================= */}
+
+<div className="mt-24">
+
+  <h2 className="text-4xl font-black">
+    Things To Do
+  </h2>
+
+  <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+    <div className="rounded-3xl bg-slate-900 p-8 border border-white/10">
+      <div className="text-5xl">🏄</div>
+
+      <h3 className="mt-5 text-2xl font-bold">
+        Water Sports
+      </h3>
+
+      <p className="mt-3 text-slate-400">
+        Enjoy exciting water sports and fun activities.
+      </p>
+
+    </div>
+
+    <div className="rounded-3xl bg-slate-900 p-8 border border-white/10">
+
+      <div className="text-5xl">🌅</div>
+
+      <h3 className="mt-5 text-2xl font-bold">
+        Sunset View
+      </h3>
+
+      <p className="mt-3 text-slate-400">
+        Watch one of Karnataka's most beautiful sunsets.
+      </p>
+
+    </div>
+
+    <div className="rounded-3xl bg-slate-900 p-8 border border-white/10">
+
+      <div className="text-5xl">📸</div>
+
+      <h3 className="mt-5 text-2xl font-bold">
+        Photography
+      </h3>
+
+      <p className="mt-3 text-slate-400">
+        Capture stunning beach and nature photography.
+      </p>
+
+    </div>
+
+    <div className="rounded-3xl bg-slate-900 p-8 border border-white/10">
+
+      <div className="text-5xl">🍤</div>
+
+      <h3 className="mt-5 text-2xl font-bold">
+        Local Food
+      </h3>
+
+      <p className="mt-3 text-slate-400">
+        Taste authentic Mangalorean seafood and snacks.
+      </p>
+
+    </div>
+
+    <div className="rounded-3xl bg-slate-900 p-8 border border-white/10">
+
+      <div className="text-5xl">🚶</div>
+
+      <h3 className="mt-5 text-2xl font-bold">
+        Beach Walk
+      </h3>
+
+      <p className="mt-3 text-slate-400">
+        Relax with a peaceful morning or evening walk.
+      </p>
+
+    </div>
+
+    <div className="rounded-3xl bg-slate-900 p-8 border border-white/10">
+
+      <div className="text-5xl">👨‍👩‍👧</div>
+
+      <h3 className="mt-5 text-2xl font-bold">
+        Family Picnic
+      </h3>
+
+      <p className="mt-3 text-slate-400">
+        Perfect destination for family outings.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
 
           {/* Sidebar */}
 
